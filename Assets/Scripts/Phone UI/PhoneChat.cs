@@ -98,7 +98,7 @@ public class PhoneChat : MonoBehaviour
         {
             solutionButton.GetComponent<Button>().interactable = false;
             LeanTween.moveLocalY(objectsToHide, 520, 0.01f).setEase(LeanTweenType.easeInOutBack);
-            onlyCountryInput.enabled = false;
+            // onlyCountryInput.enabled = false;
             // inputManagerObject.SetActive(false);
             phoneHidden = false;
 
@@ -191,7 +191,7 @@ public class PhoneChat : MonoBehaviour
                     onlyCountryInput.enabled = false;
                     inputManager.enabled = true;
 
-                  //  inputManagerObject.SetActive(true);
+                    //  inputManagerObject.SetActive(true);
                 }
 
 
