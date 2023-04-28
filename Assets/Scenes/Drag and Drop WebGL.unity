@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3708985, g: 0.3783704, b: 0.35722548, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4958,23 +4958,126 @@ PrefabInstance:
       objectReference: {fileID: 429037229}
     - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
         type: 3}
+      propertyPath: introOver
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: npcInt.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: npcInt.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
       propertyPath: npcInt.Array.data[2]
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
         type: 3}
       propertyPath: npcInt.Array.data[3]
-      value: 3
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: images1Button.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: npcButton1List.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: npcButton2List.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: images1Button.Array.data[1]
+      value: 
+      objectReference: {fileID: 2800000, guid: 648c98226289535499f5f6bf0a5150f7, type: 3}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: images1Button.Array.data[2]
+      value: 
+      objectReference: {fileID: 2800000, guid: d163484c908d2084181c0864d4e350ce, type: 3}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: images1Button.Array.data[3]
+      value: 
+      objectReference: {fileID: 2800000, guid: 7ca0edd16e875b5439eb3048730ff1b3, type: 3}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: button1ListButton.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: button2ListButton.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: npcButton1List.Array.data[0]
+      value: "Willkommen bei \u201CChallenge the globe!\u201D. Hier geht es um die
+        globale Verteilung von Bev\xF6lkerung, Reichtum, Flucht und CO2-Produktion."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: npcButton1List.Array.data[1]
+      value: "Ich bin Leila und ich f\xFChre dich gemeinsam mit meinen Expert*innen
+        durch das Spiel. Ich selbst habe mich auf die Bev\xF6lkerungsentwicklung
+        spezialisiert."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: npcButton1List.Array.data[2]
+      value: "In jedem Level wirst du eine dieser Verteilungsfragen beantworten und
+        dein Wissen dar\xFCber testen und erweitern k\xF6nnen. Dabei spielst du auf
+        unserer interaktiven Weltkarte. Diese haben wir 5 Kontinente aufgeteilt."
       objectReference: {fileID: 0}
     - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
         type: 3}
       propertyPath: npcButton1List.Array.data[3]
+      value: "Ja, Sehr gut beobachtet.  Das liegt daran, dass Ozeanien alleine kaum
+        ein Gewicht in der globalen Verteilung spielt.  Du kannst dir die L\xE4nder
+        zu den einzelnen Kontinenten jederzeit anzeigen lassen. Klicke dazu auf den
+        Namen des Kontinents."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: npcButton1List.Array.data[4]
+      value: Sehr gut dann klicke dich direkt ins erste Level!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: npcButton1List.Array.data[5]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: npcButton2List.Array.data[1]
       value: npc 2
       objectReference: {fileID: 0}
     - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
         type: 3}
+      propertyPath: npcButton2List.Array.data[2]
+      value: npc 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
       propertyPath: npcButton2List.Array.data[3]
-      value: npc 2
+      value: npc 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: button1ListContent.Array.size
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
         type: 3}
@@ -4988,6 +5091,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
         type: 3}
+      propertyPath: button1ListButton.Array.data[0]
+      value: Weiter
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: button1ListButton.Array.data[3]
+      value: Weiter
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: button1ListButton.Array.data[4]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: button1ListButton.Array.data[5]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: button2ListButton.Array.data[2]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: button2ListButton.Array.data[3]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: button2ListButton.Array.data[4]
+      value: Zum Spiel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: button2ListButton.Array.data[5]
+      value: Zum Spiel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
       propertyPath: npcButton1ListButton.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -4995,6 +5138,31 @@ PrefabInstance:
         type: 3}
       propertyPath: npcButton2ListButton.Array.size
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: button1ListContent.Array.data[1]
+      value: Freut mich!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: button1ListContent.Array.data[2]
+      value: Huch, Asien und Ozeanien sind zusammengefasst?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: button1ListContent.Array.data[3]
+      value: Danke, ich glaube ich komme zurecht!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: button1ListContent.Array.data[4]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
+        type: 3}
+      propertyPath: button1ListContent.Array.data[5]
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
         type: 3}
@@ -5452,7 +5620,7 @@ PrefabInstance:
     - target: {fileID: 3450929571994352046, guid: d040f63418438cd4c9ffe9df4f7b20d1,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000030517578
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3652915335687090626, guid: d040f63418438cd4c9ffe9df4f7b20d1,
         type: 3}
@@ -19165,13 +19333,13 @@ PrefabInstance:
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: npcButton1List.Array.size
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: images1Button.Array.data[1]
       value: 
-      objectReference: {fileID: 2800000, guid: 079a37b412b1cf045a837e7929a960cb, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: images1Button.Array.data[3]
@@ -19180,59 +19348,66 @@ PrefabInstance:
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button1ListButton.Array.size
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button2ListButton.Array.size
-      value: 15
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: npcButton1List.Array.data[0]
-      value: "In diesem Level geht es um die weltweite Verteilung der Bev\xF6lkerung.
-        Im Spiel kannst die Erkl\xE4rung jederzeit durch Klicken auf die Schaltfl\xE4che
-        \u201CHandy\u201D erneut lesen."
+      value: "Du hast sicherlich gemerkt, dass unsere Unterhaltung hier auf das Handy
+        beschr\xE4nkt ist.  Wenn du hier im Chat mal etwas nachlesen m\xF6chtest,
+        klicke einfach auf den Handybutton und scrolle dich nach oben. Durch erneutes
+        Klicken kannst du es bei bedarf wieder ablegen. "
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: npcButton1List.Array.data[1]
+      value: "In diesem Level geht es um die weltweite Verteilung der Bev\xF6lkerung."
+      objectReference: {fileID: 0}
+    - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
+        type: 3}
+      propertyPath: npcButton1List.Array.data[2]
       value: "Nimm die hellblauen Sechsecke aus dem rechten Stapel und platziere
         sie auf der Ablagefl\xE4che des entsprechenden Kontinents. Durch Rechtsklick
         auf die Ablagefl\xE4che kannst du ein bereits platziertes Sechseck neu positionieren."
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
-      propertyPath: npcButton1List.Array.data[2]
-      value: "Jedes hellblaue Sechseck Bild steht f\xFCr 376 Mio Menschen."
-      objectReference: {fileID: 0}
-    - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
-        type: 3}
       propertyPath: npcButton1List.Array.data[3]
-      value: "Du bist schon fertig? Super! Ich blende dir zu deiner L\xF6sung die
-        richtige Verteilung ein. Die hellblauen Kreisteile sind deine Eingabe, die
-        etwas dunkleren zeigen die richtige L\xF6sung."
+      value: "Jedes hellblaue Sechseck steht f\xFCr 376 Mio Menschen."
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: npcButton1List.Array.data[4]
-      value: Ok, lass uns gemeinsam auf das Ergebnis schauen.
+      value: "Du bist schon fertig? Super!  Ich blende dir zu deiner L\xF6sung die
+        richtige Verteilung ein.  Die hellblauen Kreisteile sind deine Eingabe, die
+        etwas dunkleren zeigen die richtige L\xF6sung. Schaue dir das Ergebnis in
+        Ruhe an und klicke wenn du fertig bist auf das Handy."
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: npcButton1List.Array.data[5]
-      value: Nur damit du dich nicht wunderst. Bei der Berechnung deines Ergebnisses
-        konzentrieren wir uns vor allem auf Europa.
+      value: Ok, lass uns gemeinsam auf das Ergebnis schauen.
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: npcButton1List.Array.data[6]
+      value: 'Nur damit du dich nicht wunderst. Bei der Berechnung deines Ergebnisses
+        konzentrieren wir uns vor allem auf Europa. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
+        type: 3}
+      propertyPath: npcButton1List.Array.data[7]
       value: "Als Europ\xE4er*innen tendieren wir oft dazu, von unserem Kontinent
         auf andere L\xE4nder und Kontinente zu schlie\xDFen."
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
-      propertyPath: npcButton1List.Array.data[7]
+      propertyPath: npcButton1List.Array.data[8]
       value: "Stimmt und das m\xF6chten wir gerade auch nicht. Eine Korrektur unserer
         Wahrnehmung von dem Kontinent auf dem wir leben und so viele Informationen
         zur Verf\xFCgung haben, kann jedoch helfen, einen neuen, korrekteren Blickwinkel
@@ -19240,18 +19415,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
-      propertyPath: npcButton1List.Array.data[8]
+      propertyPath: npcButton1List.Array.data[9]
       value: "Ich kann dir zumindest einige Aspekte zusammenstellen. Auch wenn Asien,
         Lateinamerika und Afrika keine homogene Regionen sind und sehr unterschiedliche
         L\xE4nder und Kulturen umfassen, haben sie einige Gemeinsamkeiten, hast du
         eine Idee?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
-        type: 3}
-      propertyPath: npcButton1List.Array.data[9]
-      value: ";-) Ein wichtiger Punkt ist, dass die Kontinente des globalen S\xFCdens
-        geografisch sehr gro\xDF sind, und eine Vielzahl von unterschiedlichen Lebensr\xE4umen
-        bereitstellen, die besiedelt werden k\xF6nnen."
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
@@ -19261,9 +19429,8 @@ PrefabInstance:
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: npcButton2List.Array.data[1]
-      value: "Alles klar! Die vollst\xE4ndige Info kannst du jederzeit mit einem
-        Klick auf das Handy im Level 1 erneut nachlesen. Ich habe dir nun das n\xE4chste
-        Level freigeschaltet."
+      value: Alles klar! Diesen Dialog kannst du jederzeit mit einem Klick auf das
+        Handy im Hauptmenue erneut nachlesen.  Klicke gleich direkt ins erste Level.
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
@@ -19273,16 +19440,23 @@ PrefabInstance:
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button1ListContent.Array.size
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button2ListContent.Array.size
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: npcButton1List.Array.data[10]
+      value: ";-) Ein wichtiger Punkt ist, dass die Kontinente des globalen S\xFCdens
+        geografisch sehr gro\xDF sind, und eine Vielzahl von unterschiedlichen Lebensr\xE4umen
+        bereitstellen, die besiedelt werden k\xF6nnen."
+      objectReference: {fileID: 0}
+    - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
+        type: 3}
+      propertyPath: npcButton1List.Array.data[11]
       value: "Das stimmt nicht f\xFCr alle L\xE4nder des globalen S\xFCdens. Dennoch
         klar: Viele L\xE4nder insbesondere in Asien haben vergleichsweise hohe Geburtenraten
         und eine junge Bev\xF6lkerung, was zu einem raschen Bev\xF6lkerungswachstum
@@ -19290,7 +19464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
-      propertyPath: npcButton1List.Array.data[11]
+      propertyPath: npcButton1List.Array.data[12]
       value: "Stimmt! Das ist ein Zusammenhang der sich bis heute deutlich im globalen
         Gef\xE4lle bemerkbar macht. Bezogen auf die Geburtenrate spielen nicht zuletzt
         auch wirtschaftliche Faktoren eine Rolle, da L\xE4nder des globalen S\xFCden
@@ -19299,21 +19473,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
-      propertyPath: npcButton1List.Array.data[12]
+      propertyPath: npcButton1List.Array.data[13]
       value: "Das behaupten manche Menschen. Dabei vergessen sie, einen zentralen
         Aspekt: In der Regel profitieren vor allem unsere Industrien im globalen
         Norden von den Rohstoffen und Landwirtschaftsprodukten des globalen S\xFCdens."
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
-      propertyPath: npcButton1List.Array.data[13]
+      propertyPath: npcButton1List.Array.data[14]
       value: "Genau! Und schon sind wir auch beim Thema Wirtschaft angekommen. Soll
         ich das n\xE4chste Level f\xFCr dich freischalten?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
-        type: 3}
-      propertyPath: npcButton1List.Array.data[14]
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
@@ -19330,17 +19499,17 @@ PrefabInstance:
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button1ListButton.Array.data[0]
-      value: Wie geht das?
+      value: Alles klar!
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button1ListButton.Array.data[1]
-      value: "Wof\xFCr steht ein Hexagon?"
+      value: Wie geht das?
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button1ListButton.Array.data[2]
-      value: 0
+      value: Hexagon=?
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
@@ -19350,7 +19519,7 @@ PrefabInstance:
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button1ListButton.Array.data[4]
-      value: Weiter
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
@@ -19365,12 +19534,12 @@ PrefabInstance:
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button1ListButton.Array.data[7]
-      value: Verstanden
+      value: Weiter
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button1ListButton.Array.data[8]
-      value: Mehr zum Wachstum
+      value: Verstanden
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
@@ -19380,32 +19549,32 @@ PrefabInstance:
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button2ListButton.Array.data[0]
-      value: Zum Spiel
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button2ListButton.Array.data[1]
-      value: Zum Spiel
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button2ListButton.Array.data[2]
-      value: Zum Spiel
+      value: zum Spiel
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button2ListButton.Array.data[3]
-      value: "Zur L\xF6sung"
+      value: Zum Spiel
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button2ListButton.Array.data[4]
-      value: 0
+      value: Zum Spiel
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button2ListButton.Array.data[5]
-      value: 0
+      value: "Zur L\xF6sung"
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
@@ -19425,7 +19594,7 @@ PrefabInstance:
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button2ListButton.Array.data[9]
-      value: "N\xE4chstes Level"
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
@@ -19455,27 +19624,32 @@ PrefabInstance:
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button1ListButton.Array.data[14]
+      value: Mehr zum Wachstum
+      objectReference: {fileID: 0}
+    - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
+        type: 3}
+      propertyPath: button1ListButton.Array.data[15]
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button1ListContent.Array.data[0]
-      value: Was muss ich genau tun?
+      value: Alles klar!
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button1ListContent.Array.data[1]
-      value: "F\xFCr wie viele Menschen steht ein Hexagon?"
+      value: Was muss ich genau tun?
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button1ListContent.Array.data[2]
-      value: 0
+      value: "F\xFCr wie viele Menschen steht ein Hexagon?"
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button1ListContent.Array.data[3]
-      value: Ok!
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
@@ -19485,34 +19659,34 @@ PrefabInstance:
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button1ListContent.Array.data[5]
-      value: Huch? Wieso das denn?
+      value: Ok!
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button1ListContent.Array.data[6]
+      value: Huch? Wieso das denn?
+      objectReference: {fileID: 0}
+    - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
+        type: 3}
+      propertyPath: button1ListContent.Array.data[7]
       value: Ja, aber Europa als Ausgangspunkt der Welt zu nehmen, ist doch ziemlich
         daneben.
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
-      propertyPath: button1ListContent.Array.data[7]
+      propertyPath: button1ListContent.Array.data[8]
       value: Nagut! Los gehts.
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
-      propertyPath: button1ListContent.Array.data[8]
+      propertyPath: button1ListContent.Array.data[9]
       value: "Ich bin \xFCberrascht, wie gro\xDF die Unterschiede zwischen einzelnen
         Kontinenten sind. Kannst du mir das erkl\xE4ren?"
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
-      propertyPath: button1ListContent.Array.data[9]
-      value: "Ich w\xFCrde lieber nicht raten."
-      objectReference: {fileID: 0}
-    - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
-        type: 3}
       propertyPath: button2ListButton.Array.data[10]
-      value: "N\xE4chstes Level"
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
@@ -19536,8 +19710,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
+      propertyPath: button2ListButton.Array.data[15]
+      value: "N\xE4chstes Level"
+      objectReference: {fileID: 0}
+    - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
+        type: 3}
+      propertyPath: button2ListButton.Array.data[16]
+      value: "N\xE4chstes Level"
+      objectReference: {fileID: 0}
+    - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
+        type: 3}
       propertyPath: button2ListContent.Array.data[0]
-      value: "Ich m\xF6chte zum Spiel"
+      value: Alles klar!
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
@@ -19547,17 +19731,17 @@ PrefabInstance:
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button2ListContent.Array.data[2]
-      value: Und was mache ich, wenn ich fertig bin?
+      value: "Ich m\xF6chte zum Spiel"
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button2ListContent.Array.data[3]
-      value: 0
+      value: Und was mache ich, wenn ich fertig bin?
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button2ListContent.Array.data[4]
-      value: Und was mache ich, wenn ich fertig bin?
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
@@ -19582,35 +19766,40 @@ PrefabInstance:
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button2ListContent.Array.data[9]
-      value: "Ok. Das reicht mir als Info. Ich m\xF6chte zum n\xE4chsten Level."
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button1ListContent.Array.data[10]
+      value: "Ich w\xFCrde lieber nicht raten."
+      objectReference: {fileID: 0}
+    - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
+        type: 3}
+      propertyPath: button1ListContent.Array.data[11]
       value: "Ok das leuchtet ein\u2026 Aber ich habe auch gelesen, dass die Geburtenraten
         im globalen S\xFCden vergleichsweise sehr hoch sind."
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
-      propertyPath: button1ListContent.Array.data[11]
+      propertyPath: button1ListContent.Array.data[12]
       value: "Ok spannend. Das mit den Geburtenraten ist mir noch aus dem Erdkundeunterricht
         in Erinnerung geblieben. Aber mir f\xE4llt noch eine weitere Gemeinsamkeit
         ein: Alle diese Kontinente wurden von Europa kolonialisiert."
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
-      propertyPath: button1ListContent.Array.data[12]
+      propertyPath: button1ListContent.Array.data[13]
       value: "Ok, das heisst, die L\xE4nder im globalen S\xFCden m\xFCssen einfach
         ihre Art zu wirtschaften umstellen?"
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
-      propertyPath: button1ListContent.Array.data[13]
+      propertyPath: button1ListContent.Array.data[14]
       value: "Da schlie\xDFt sich der Kreis zum Kolonialismus!"
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
-      propertyPath: button1ListContent.Array.data[14]
+      propertyPath: button1ListContent.Array.data[15]
       value: "Da schlie\xDFt sich der Kreis zum Kolonialismus!"
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
@@ -19636,6 +19825,11 @@ PrefabInstance:
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: button2ListContent.Array.data[14]
+      value: "Ok. Das reicht mir als Info. Ich m\xF6chte zum n\xE4chsten Level."
+      objectReference: {fileID: 0}
+    - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
+        type: 3}
+      propertyPath: button2ListContent.Array.data[15]
       value: "Ok. Das reicht mir als Info. Ich m\xF6chte zum n\xE4chsten Level."
       objectReference: {fileID: 0}
     - target: {fileID: 580005255999415938, guid: 88a81022d2810fb4a88437b898f64397,
@@ -20418,6 +20612,37 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1d57e4a570784b04d94e1a688fc0f9ba, type: 2}
+    - target: {fileID: 6287556560237344084, guid: 88a81022d2810fb4a88437b898f64397,
+        type: 3}
+      propertyPath: EuGenau
+      value: Eine Sekunde... Wow!  Genau ins Schwarze getroffen! Du bist ein echter
+        Profi!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287556560237344084, guid: 88a81022d2810fb4a88437b898f64397,
+        type: 3}
+      propertyPath: EuWenig
+      value: "Da hast du deutlich weniger Menschen in Europa verortet, als tats\xE4chlich
+        hier leben. M\xF6glicherweise liegt diese Wahrnehmungsverschiebung daran,
+        dass Europa im Vergleich zu anderen Kontinenten wie Asien oder Afrika geografisch
+        betrachtet eher klein ist. Auch wird Europa oft als eher wohlhabend wahrgenommen,
+        wodurch man denken k\xF6nnte, dass die Bev\xF6lkerungszahl h\xF6her ist als
+        es tats\xE4chlich der Fall ist."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287556560237344084, guid: 88a81022d2810fb4a88437b898f64397,
+        type: 3}
+      propertyPath: EuZuviel
+      value: "Da hast du deutlich mehr Menschen in Europa verortet, als tats\xE4chlich
+        hier leben. Diese Wahrnehmungsverschiebung k\xF6nnte daran liegen, dass Europa
+        im Vergleich zu anderen Kontinenten eine hohe Bev\xF6lkerungsdichte aufweist
+        und auch als wirtschaftlich und politisch einflussreiche Region bekannt ist.
+        Dadurch kann der Eindruck entstehen, dass Europa einen gr\xF6\xDFeren Anteil
+        an der Weltbev\xF6lkerung hat, als es tats\xE4chlich der Fall ist."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287556560237344084, guid: 88a81022d2810fb4a88437b898f64397,
+        type: 3}
+      propertyPath: EuAbweichung
+      value: Ich bin soweit... Wow! Du bist verdammt dicht an dem richtigen Ergebnis!
+      objectReference: {fileID: 0}
     - target: {fileID: 6311217352870793535, guid: 88a81022d2810fb4a88437b898f64397,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
