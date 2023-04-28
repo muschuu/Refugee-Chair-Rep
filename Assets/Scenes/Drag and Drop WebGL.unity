@@ -5057,7 +5057,7 @@ PrefabInstance:
     - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
         type: 3}
       propertyPath: npcButton1List.Array.data[5]
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3450929571634505541, guid: d040f63418438cd4c9ffe9df4f7b20d1,
         type: 3}
