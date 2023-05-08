@@ -13,13 +13,13 @@ public class ResponsesToSolution : MonoBehaviour
     // [SerializeField] List<string> text = new List<string>();
 
     [Header("Button 1 Player")]
-
     public List<string> button1ListButton = new List<string>();
     public List<string> button2ListButton = new List<string>();
     public List<string> button1ListContent = new List<string>();
     public List<string> button2ListContent = new List<string>();
 
     [Header("Button 1 NPC")]
+    [Multiline(3)]
 
     public List<string> npcButton1List = new List<string>();
     public List<Texture> images1Button = new List<Texture>();
@@ -28,7 +28,6 @@ public class ResponsesToSolution : MonoBehaviour
 
 
     [Header("Button 2 NPC")]
-
     public List<string> npcButton2List = new List<string>();
     public List<Texture> images2Button = new List<Texture>();
     public List<int> npcInt = new List<int>();

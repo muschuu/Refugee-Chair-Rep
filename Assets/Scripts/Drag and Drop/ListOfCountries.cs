@@ -27,12 +27,15 @@ public class ListOfCountries : MonoBehaviour
         {
             content = europa;
         }
-        else if (transform.parent.GetComponentInParent<Continents>().name == "Süd Amerika")
+        else if (transform.parent.GetComponentInParent<Continents>().name == "Südamerika")
         {
+           // Debug.Log("südamerika");
             content = südamerika;
         }
         else
         {
+          //  Debug.Log(transform.parent.GetComponentInParent<Continents>().name);
+          //  Debug.Log("nordamerika");
             content = nordamerika;
         }
     }

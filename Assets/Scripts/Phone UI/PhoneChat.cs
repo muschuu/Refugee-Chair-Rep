@@ -13,6 +13,7 @@ public class PhoneChat : MonoBehaviour
     [SerializeField] GameObject nPCchatBoxPrefab;
     [SerializeField] GameObject playerchatBoxPrefab;
     [SerializeField] GameObject imageBoxPrefab;
+    public GameObject newMessage;
 
     [Header("UI Assign")]
     [SerializeField] GameObject objectsToHide;
@@ -90,13 +91,14 @@ public class PhoneChat : MonoBehaviour
 
         inputManager = inputManagerObject.GetComponent<InputManager>();
         onlyCountryInput = inputManagerObject.GetComponent<OnlyVountrieInfoInput>();
+        onlyCountryInput.enabled = false;
         hidePhoneButtonText = hidePhoneButton.transform.GetChild(0).GetComponentInChildren<TextMeshProUGUI>();
         solutionUI = GetComponent<SolutionUI>();
         responses = GetComponent<ResponsesToSolution>();
-
+        newMessage.SetActive(false);
         if (intro)
         {
-            solutionButton.GetComponent<Button>().interactable = false;
+            // solutionButton.GetComponent<Button>().interactable = false;
             LeanTween.moveLocalY(objectsToHide, 520, 0.01f).setEase(LeanTweenType.easeInOutBack);
             onlyCountryInput.enabled = false;
             // inputManagerObject.SetActive(false);
@@ -185,13 +187,20 @@ public class PhoneChat : MonoBehaviour
                 LeanTween.moveLocalY(objectsToHide, 520, 1f).setEase(LeanTweenType.easeInOutBack).setOnComplete(SetTrantitionFalse).setDelay(.4f);
 
                 phoneHidden = false;
+                inputManager.enabled = false;
+                onlyCountryInput.enabled = false;
+
+
                 hidePhoneButtonText.text = "Handy?";
                 if (!end)
                 {
-                    onlyCountryInput.enabled = false;
+                    Debug.Log("an");
                     inputManager.enabled = true;
+                }
+                else
+                {
 
-                  //  inputManagerObject.SetActive(true);
+                    onlyCountryInput.enabled = true;
                 }
 
 
@@ -203,8 +212,15 @@ public class PhoneChat : MonoBehaviour
                 phoneHidden = true;
                 hidePhoneButtonText.text = "Handy!";
 
-                onlyCountryInput.enabled = true;
+                //    onlyCountryInput.enabled = true;
+
+                // Debug.Log("an");
+                Debug.Log("aus");
+                onlyCountryInput.enabled = false;
                 inputManager.enabled = false;
+
+                // inputManager.enabled = false;
+                newMessage.SetActive(false);
                 //    inputManagerObject.SetActive(false);
 
             }
@@ -212,7 +228,7 @@ public class PhoneChat : MonoBehaviour
     }
     public void MovePhoneToLeft()
     {
-        LeanTween.moveLocalX(objectsToHide, -245, 1f).setEase(LeanTweenType.easeInOutBack).setDelay(.2f);
+        LeanTween.moveLocalX(objectsToHide, -322, 1f).setEase(LeanTweenType.easeInOutBack).setDelay(.2f);
         SoundManager.instance.HandyUpSound();
     }
     void HidePhoneButton()

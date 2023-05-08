@@ -133,6 +133,7 @@ public class SolutionUI : MonoBehaviour
         return solution;
 
     }
+
     public void AnswerManagerVoidCall(int textBox)
     {
         if (textBox == 1)
@@ -163,6 +164,7 @@ public class SolutionUI : MonoBehaviour
                 //  Debug.Log(responses.introOver);
                 if (intA + 1 == responses.introOver)
                 {
+                    //  Debug.Log("Erster Dialog bei der Auflösung");
                     // Erster Dialog bei der Auflösung
                     phoneChat.MenuButtonActive(false);
                     StartCoroutine(AnswerManagerVoid("prüfen"));
@@ -174,6 +176,7 @@ public class SolutionUI : MonoBehaviour
                     {
                         GameObject.FindObjectOfType<LevelUpdate>().UpdateRightSlots();
                         intA++;
+                        phoneChat.newMessage.SetActive(false);
                     }
                     StartCoroutine(AnswerManagerVoid("dialog2"));
                     phoneChat.MenuButtonActive(true);
@@ -188,7 +191,7 @@ public class SolutionUI : MonoBehaviour
                     {
                         once = false;
                     }
-                    if (responses.button1ListButton[intA] == "Verstanden")
+                    if (responses.button1ListButton[intA] == "Zeig her!")
                     {
                         StartCoroutine(AnswerManagerVoid("solution"));
 
@@ -206,6 +209,8 @@ public class SolutionUI : MonoBehaviour
         }
         else
         {
+            //Debug.Log(responses.button2ListButton[intA]);
+            // Debug.Log(intA);
             // Debug.Log(responses.button2ListButton[intA - 1]);
 
             if (responses.button2ListButton[intA] == "Zum Spiel")
@@ -220,10 +225,12 @@ public class SolutionUI : MonoBehaviour
 
                 //Hier geht es zu dem nächstem level
             }
-            else if (responses.button2ListButton[intA - 1] == "Zur Lösung")
+            else if (responses.button2ListButton[intA] == "Lös auf!")
             {
+                Debug.Log("Zur lösung");
                 // Hier wird das Handy nach oben geschoben
                 StartCoroutine(AnswerManagerVoid("handyweg2"));
+                intA++;
 
             }
 
@@ -231,6 +238,10 @@ public class SolutionUI : MonoBehaviour
         }
 
     }
+    //private void Update()
+    //{
+    //    Debug.Log(intA);
+    //}
     IEnumerator AnswerManagerVoid(string answertype)
     {
         yield return new WaitForSecondsRealtime(.1f);
@@ -272,6 +283,7 @@ public class SolutionUI : MonoBehaviour
             yield return new WaitForSecondsRealtime(1.2f);
 
             intA++;
+            phoneChat.newMessage.SetActive(false);
             phoneChat.TypePlayerChat(responses.button1ListContent[intA - 1]);
             yield return new WaitForSecondsRealtime(.7f);
             phoneChat.SpawnTyping();
@@ -341,7 +353,7 @@ public class SolutionUI : MonoBehaviour
             }
             yield return new WaitForSecondsRealtime(.7f);
             phoneChat.EnableChatBox();
-            intA++;
+            //  intA++;
 
         }
         else if (answertype == "dialog ende") // fertig
@@ -375,7 +387,7 @@ public class SolutionUI : MonoBehaviour
             phoneChat.SpawnTextBox(responses.npcButton2List[0], false);
             yield return new WaitForSecondsRealtime(.7f);
             phoneChat.SpawnImageBox(responses.images2Button[0]);
-            yield return new WaitForSecondsRealtime(.7f);
+            yield return new WaitForSecondsRealtime(2f);
             phoneChat.OnClickHidePhone();
             phoneChat.EnableChatBox();
 
@@ -385,7 +397,7 @@ public class SolutionUI : MonoBehaviour
         {
             Debug.Log("handyweg2");
 
-            phoneChat.TypePlayerChat(responses.button2ListContent[intA]);
+            phoneChat.TypePlayerChat(responses.button2ListContent[intA - 1]);
             phoneChat.SolutionScreen();
 
             yield return new WaitForSecondsRealtime(.7f);
@@ -401,6 +413,7 @@ public class SolutionUI : MonoBehaviour
             yield return new WaitForSecondsRealtime(7.6f);
             if (ersterDialogNachLösung == false)
             {
+                phoneChat.newMessage.SetActive(true);
 
                 StartCoroutine(AnswerManagerVoid("begin2"));
                 intA--;
@@ -417,7 +430,9 @@ public class SolutionUI : MonoBehaviour
             yield return new WaitForSecondsRealtime(.7f);
             phoneChat.MenuButtonActive(true);
             phoneChat.SpawnTextBox(responses.npcButton2List[1], false);
-            yield return new WaitForSecondsRealtime(3.2f);
+            yield return new WaitForSecondsRealtime(4.6f);
+            phoneChat.OnClickHidePhone();
+            yield return new WaitForSecondsRealtime(1f);
 
             if (responses.npcButton1List.Count > intA)
             {
@@ -425,12 +440,14 @@ public class SolutionUI : MonoBehaviour
                 for (int i = intA; i < lengh; i++)
                 {
                     Debug.Log(i);
-                    yield return new WaitForSecondsRealtime(.5f);
-                    phoneChat.SpawnTextBox(responses.npcButton1List[i],false);
+                    phoneChat.TypePlayerChat(responses.button1ListContent[i]);
+                    // yield return new WaitForSecondsRealtime(.5f);
+                    phoneChat.SpawnTextBox(responses.npcButton1List[i], false);
 
                     intA++;
                 }
             }
+            yield return new WaitForSecondsRealtime(.8f);
 
             LevelManager.instance.UpdateNextLevel(FindObjectOfType<LevelUpdate>().level);
             LevelManager.instance.OpenNextLevel(gameObject.transform.parent.GetComponent<LevelUpdate>().level + 1);
