@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b10b1263ce7323c4f8abed9374c7d986
+guid: c82a8fee32d0aa940832edfc50a235c9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -39,12 +39,12 @@ TextureImporter:
     wrapU: 0
     wrapV: 0
     wrapW: 0
-  nPOTScale: 0
+  nPOTScale: 1
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 0
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -53,7 +53,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 0
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -127,153 +127,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: mojis_0
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 762
-        width: 355
-        height: 351
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e8fcdc4aaab37bd478d71cf550748528
-      internalID: 1217100522
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mojis_1
-      rect:
-        serializedVersion: 2
-        x: 508
-        y: 786
-        width: 351
-        height: 321
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e1d00addaf73024481aac7dc489ecbd
-      internalID: 38308591
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mojis_2
-      rect:
-        serializedVersion: 2
-        x: 831
-        y: 693
-        width: 439
-        height: 438
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b3d3f027d252a214ea99e6e9c2d74135
-      internalID: 3535000
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mojis_3
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 237
-        width: 399
-        height: 391
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ff8fe3000bb45c3458a6e9d89a987628
-      internalID: -365280301
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mojis_4
-      rect:
-        serializedVersion: 2
-        x: 493
-        y: 233
-        width: 360
-        height: 360
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 34c804de6ea305b4a856adb0102177fc
-      internalID: -1959320614
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mojis_5
-      rect:
-        serializedVersion: 2
-        x: 887
-        y: 217
-        width: 381
-        height: 376
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a85b920507e1c4c47aea6bb3612948aa
-      internalID: -567387617
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c146205090dafbd45b541d5e41a648ec
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      mojis_4: -1959320614
-      mojis_1: 38308591
-      mojis_2: 3535000
-      mojis_8: 1051698094
-      mojis_7: 2123931448
-      mojis_5: -567387617
-      mojis_6: -551167616
-      mojis_0: 1217100522
-      mojis_3: -365280301
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

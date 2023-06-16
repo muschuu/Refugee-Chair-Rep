@@ -136,6 +136,7 @@ public class SolutionUI : MonoBehaviour
 
     public void AnswerManagerVoidCall(int textBox)
     {
+       // Debug.Log(intA);
         if (textBox == 1)
         {
             if (auflösung == false) // Bevor die Auflösung kommt
@@ -193,6 +194,7 @@ public class SolutionUI : MonoBehaviour
                     }
                     if (responses.button1ListButton[intA] == "Zeig her!")
                     {
+                        Debug.Log("Zeig her, has heisst dass jetzt die personalisierte");
                         StartCoroutine(AnswerManagerVoid("solution"));
 
                         zurLösung = true;
@@ -217,9 +219,10 @@ public class SolutionUI : MonoBehaviour
             {
                 // Hier wird das Handy nach oben geschoben
                 StartCoroutine(AnswerManagerVoid("handyweg"));
+                Debug.Log("zum Spiel");
 
             }
-            else if (responses.button2ListButton[intA] == "Nächstes Level")
+            else if (responses.button2ListButton[intA] == "Nächstes Level" || responses.button2ListButton[intA] == "Dialog Überspringen")
             {
                 StartCoroutine(AnswerManagerVoid("nextlvl"));
 
@@ -264,9 +267,10 @@ public class SolutionUI : MonoBehaviour
         if (answertype == "begin2") //fertig
         {
             //intA--;
+            Debug.Log("Begin");
             intA++;
             phoneChat.SpawnTyping();
-            yield return new WaitForSecondsRealtime(.7f);
+            yield return new WaitForSecondsRealtime(.7f); 
             phoneChat.SpawnTextBox(responses.npcButton1List[intA], false);
             if (SpawnImage())
             {
@@ -279,6 +283,8 @@ public class SolutionUI : MonoBehaviour
         }
         else if (answertype == "solution") // noch bearbeiten 
         {
+            Debug.Log("solution");
+            Debug.Log(intA);
             phoneChat.MovePhoneToLeft();
             yield return new WaitForSecondsRealtime(1.2f);
 
@@ -289,6 +295,7 @@ public class SolutionUI : MonoBehaviour
             phoneChat.SpawnTyping();
             yield return new WaitForSecondsRealtime(.7f);
             phoneChat.SpawnTextBox(WriteEuropeSolution(), false);
+            Debug.Log("soltion wird jetzt6 angezeigt");
             yield return new WaitForSecondsRealtime(.7f);
             phoneChat.EnableChatBox();
         }
@@ -385,8 +392,12 @@ public class SolutionUI : MonoBehaviour
             phoneChat.SpawnTyping();
             yield return new WaitForSecondsRealtime(.7f);
             phoneChat.SpawnTextBox(responses.npcButton2List[0], false);
-            yield return new WaitForSecondsRealtime(.7f);
-            phoneChat.SpawnImageBox(responses.images2Button[0]);
+            if (responses.images2Button[intA] != null)
+            {
+
+                yield return new WaitForSecondsRealtime(.7f);
+                phoneChat.SpawnImageBox(responses.images2Button[intA]);
+            }
             yield return new WaitForSecondsRealtime(2f);
             phoneChat.OnClickHidePhone();
             phoneChat.EnableChatBox();
@@ -434,19 +445,19 @@ public class SolutionUI : MonoBehaviour
             phoneChat.OnClickHidePhone();
             yield return new WaitForSecondsRealtime(1f);
 
-            if (responses.npcButton1List.Count > intA)
-            {
-                int lengh = responses.npcButton1List.Count;
-                for (int i = intA; i < lengh; i++)
-                {
-                    Debug.Log(i);
-                    phoneChat.TypePlayerChat(responses.button1ListContent[i]);
-                    // yield return new WaitForSecondsRealtime(.5f);
-                    phoneChat.SpawnTextBox(responses.npcButton1List[i], false);
+            //if (responses.npcButton1List.Count > intA)
+            //{
+            //    int lengh = responses.npcButton1List.Count;
+            //    for (int i = intA; i < lengh; i++)
+            //    {
+            //        Debug.Log(i);
+            //        phoneChat.TypePlayerChat(responses.button1ListContent[i]);
+            //        // yield return new WaitForSecondsRealtime(.5f);
+            //        phoneChat.SpawnTextBox(responses.npcButton1List[i], false);
 
-                    intA++;
-                }
-            }
+            //        intA++;
+            //    }
+            //}
             yield return new WaitForSecondsRealtime(.8f);
 
             LevelManager.instance.UpdateNextLevel(FindObjectOfType<LevelUpdate>().level);

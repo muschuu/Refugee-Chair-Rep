@@ -28,6 +28,8 @@ public class ResponsesToSolution : MonoBehaviour
 
 
     [Header("Button 2 NPC")]
+    [Multiline(3)]
+
     public List<string> npcButton2List = new List<string>();
     public List<Texture> images2Button = new List<Texture>();
     public List<int> npcInt = new List<int>();

@@ -101,6 +101,7 @@ public class PhoneChat : MonoBehaviour
             // solutionButton.GetComponent<Button>().interactable = false;
             LeanTween.moveLocalY(objectsToHide, 520, 0.01f).setEase(LeanTweenType.easeInOutBack);
             onlyCountryInput.enabled = false;
+            inputManager.enabled = false;
             // inputManagerObject.SetActive(false);
             phoneHidden = false;
 
@@ -194,7 +195,7 @@ public class PhoneChat : MonoBehaviour
                 hidePhoneButtonText.text = "Handy?";
                 if (!end)
                 {
-                    Debug.Log("an");
+                //    Debug.Log("an");
                     inputManager.enabled = true;
                 }
                 else
@@ -215,7 +216,7 @@ public class PhoneChat : MonoBehaviour
                 //    onlyCountryInput.enabled = true;
 
                 // Debug.Log("an");
-                Debug.Log("aus");
+               // Debug.Log("aus");
                 onlyCountryInput.enabled = false;
                 inputManager.enabled = false;
 
